@@ -2,6 +2,7 @@ import Ten11 from "../assets/projects/Ten11.png";
 import CMS from "../assets/projects/CMS.png";
 import Kare from "../assets/projects/kareRestarant.png";
 import UXUi from "../assets/projects/UXUI.png";
+import Glowing from "../assets/projects/glowing.png";
 
 export const HERO_CONTENT = `I am a passionate web developer with a strong focus on both frontend and backend technologies. With hands-on experience in HTML, CSS, JavaScript, PHP, Laravel, C, C++, Java, and UX/UI design using Figma, I specialize in building efficient, user-friendly web applications. My goal is to create innovative and scalable solutions that not only meet the needs of users but also drive business success. I’m always eager to learn and push the boundaries of web development, with a keen interest in contributing to the future of technology through research and teaching.`;
 
@@ -35,12 +36,12 @@ export const PROJECTS = [
     url: "https://github.com/sazzysazz/-web_cms",
   },
   {
-    title: "Sabay News",
-    image: Kare,
+    title: "Glowing",
+    image: Glowing,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "This website is a modern e-commerce platform designed for skincare products. At the top, it features a clean header with a free shipping notice, a logo, navigation links, a search bar, and user profile icons. The main section showcases a hero banner with a visually appealing image of skincare products placed on a green leaf, accompanied by a bold heading, Reveal The Beauty of Skin and a brief description emphasizing clean and non-toxic ingredients",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    url: "https://github.com/sazzysazz/sabay-News",
+    url: "https://sazzysazz.github.io/Glowing/",
   },
   {
     title: "UX/UI About the Agencies Website and Mobile App",
