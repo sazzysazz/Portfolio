@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaFacebookSquare,
   FaTelegram,
+  FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -64,6 +65,13 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <FaTelegram />
+        </a>
+        <a
+          href="https://www.instagram.com/_https.sazz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram />
         </a>
       </motion.div>
     </nav>
