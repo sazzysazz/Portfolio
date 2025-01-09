@@ -36,14 +36,20 @@ const About = () => {
           <div className="flex flex-col items-center lg:items-start lg:pl-20">
             <p className="my-2 py-6 max-w-xl">{ABOUT_TEXT}</p>
             {/* Download Button */}
-            <a
+            <motion.a
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
               href={CV} // Dynamically imported file path
               download="Chao_Visal_CV.pdf"
               className="mt-4 flex items-center px-6 py-3 bg-purple-900 text-white rounded-lg shadow-lg hover:bg-purple-500 transition-all"
             >
               <FaDownload className="mr-2" />
-              Download CV
-            </a>
+              <span>Download My</span>
+              <span className="ml-1 text-neutral-300 font-semibold">
+                Cover Letter
+              </span>
+            </motion.a>
           </div>
         </motion.div>
       </div>
