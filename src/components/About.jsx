@@ -39,7 +39,7 @@ const About = () => {
             <motion.a
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               href={CV} // Dynamically imported file path
               download="Chao_Visal_CV.pdf"
               className="mt-4 flex items-center px-6 py-3 bg-purple-900 text-white rounded-lg shadow-lg hover:bg-purple-500 transition-all"
