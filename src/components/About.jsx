@@ -1,6 +1,8 @@
 import aboutImg3 from "../assets/aboutImg3.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa"; // Corrected import
+import CV from "../assets/Chao Visal.pdf";
 
 const About = () => {
   return (
@@ -31,8 +33,17 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex justify-center lg:justify-start lg:pl-20">
+          <div className="flex flex-col items-center lg:items-start lg:pl-20">
             <p className="my-2 py-6 max-w-xl">{ABOUT_TEXT}</p>
+            {/* Download Button */}
+            <a
+              href={CV} // Dynamically imported file path
+              download="Chao_Visal_CV.pdf"
+              className="mt-4 flex items-center px-6 py-3 bg-purple-900 text-white rounded-lg shadow-lg hover:bg-purple-500 transition-all"
+            >
+              <FaDownload className="mr-2" />
+              Download CV
+            </a>
           </div>
         </motion.div>
       </div>
